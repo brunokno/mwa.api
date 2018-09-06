@@ -1,0 +1,16 @@
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.deps.json
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.dll
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.csproj.CoreCompileInputs.cache
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.AssemblyInfoInputs.cache
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.AssemblyInfo.cs
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.pdb
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Domain.dll
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Shared.dll
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Domain.pdb
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Shared.pdb
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.csproj.CopyComplete
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.dll
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.pdb
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.csprojAssemblyReference.cache
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.runtimeconfig.json
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.runtimeconfig.dev.json

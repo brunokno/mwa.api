@@ -1,0 +1,9 @@
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\bin\Debug\netstandard2.0\ModernStore.Shared.deps.json
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\bin\Debug\netstandard2.0\ModernStore.Shared.dll
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\bin\Debug\netstandard2.0\ModernStore.Shared.pdb
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.csproj.CoreCompileInputs.cache
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.AssemblyInfoInputs.cache
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.AssemblyInfo.cs
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.dll
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.pdb
+C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.csprojAssemblyReference.cache
