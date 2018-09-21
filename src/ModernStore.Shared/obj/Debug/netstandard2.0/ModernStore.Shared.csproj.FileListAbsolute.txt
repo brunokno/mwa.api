@@ -7,3 +7,12 @@ C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\De
 C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.dll
 C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.pdb
 C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\bin\Debug\netstandard2.0\ModernStore.Shared.deps.json
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\bin\Debug\netstandard2.0\ModernStore.Shared.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\bin\Debug\netstandard2.0\ModernStore.Shared.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.csproj.CoreCompileInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.AssemblyInfoInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.AssemblyInfo.cs
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Shared\obj\Debug\netstandard2.0\ModernStore.Shared.pdb

@@ -206,11 +206,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Shared\\ModernStore.Shared.csproj",
+      "projectUniqueName": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Shared\\ModernStore.Shared.csproj",
       "projectName": "ModernStore.Shared",
-      "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Shared\\ModernStore.Shared.csproj",
+      "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Shared\\ModernStore.Shared.csproj",
       "packagesPath": "C:\\Users\\kbsolucoesme.snd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Shared\\obj\\",
+      "outputPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3627,11 +3627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Infra\\ModernStore.Infra.csproj",
+      "projectUniqueName": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Infra\\ModernStore.Infra.csproj",
       "projectName": "ModernStore.Infra",
-      "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Infra\\ModernStore.Infra.csproj",
+      "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Infra\\ModernStore.Infra.csproj",
       "packagesPath": "C:\\Users\\kbsolucoesme.snd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Infra\\obj\\",
+      "outputPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3650,8 +3650,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Domain\\ModernStore.Domain.csproj": {
-              "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Domain\\ModernStore.Domain.csproj"
+            "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Domain\\ModernStore.Domain.csproj": {
+              "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Domain\\ModernStore.Domain.csproj"
             }
           }
         }

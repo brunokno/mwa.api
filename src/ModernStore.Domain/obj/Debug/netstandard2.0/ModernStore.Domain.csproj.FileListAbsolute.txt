@@ -12,3 +12,17 @@ C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Domain\obj\De
 C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.dll
 C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.pdb
 C:\Users\kbsolucoesme.snd\source\repos\ModernStore\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\bin\Debug\netstandard2.0\ModernStore.Domain.deps.json
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\bin\Debug\netstandard2.0\ModernStore.Domain.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\bin\Debug\netstandard2.0\ModernStore.Domain.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\bin\Debug\netstandard2.0\ModernStore.Shared.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\bin\Debug\netstandard2.0\ModernStore.Shared.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.Resources.EmailTemplates.resources
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.csproj.GenerateResource.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.csproj.CoreCompileInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.AssemblyInfoInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.AssemblyInfo.cs
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.csproj.CopyComplete
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain\obj\Debug\netstandard2.0\ModernStore.Domain.pdb

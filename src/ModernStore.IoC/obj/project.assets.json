@@ -3648,11 +3648,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.IoC\\ModernStore.IoC.csproj",
+      "projectUniqueName": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.IoC\\ModernStore.IoC.csproj",
       "projectName": "ModernStore.IoC",
-      "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.IoC\\ModernStore.IoC.csproj",
+      "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.IoC\\ModernStore.IoC.csproj",
       "packagesPath": "C:\\Users\\kbsolucoesme.snd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.IoC\\obj\\",
+      "outputPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3671,14 +3671,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Domain\\ModernStore.Domain.csproj": {
-              "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Domain\\ModernStore.Domain.csproj"
+            "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Domain\\ModernStore.Domain.csproj": {
+              "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Domain\\ModernStore.Domain.csproj"
             },
-            "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Infra\\ModernStore.Infra.csproj": {
-              "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Infra\\ModernStore.Infra.csproj"
+            "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Infra\\ModernStore.Infra.csproj": {
+              "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Infra\\ModernStore.Infra.csproj"
             },
-            "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Shared\\ModernStore.Shared.csproj": {
-              "projectPath": "C:\\Users\\kbsolucoesme.snd\\source\\repos\\ModernStore\\src\\ModernStore.Shared\\ModernStore.Shared.csproj"
+            "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Shared\\ModernStore.Shared.csproj": {
+              "projectPath": "C:\\Tarefas\\Others\\balta.io\\Estudo\\mwa.api\\src\\ModernStore.Shared\\ModernStore.Shared.csproj"
             }
           }
         }

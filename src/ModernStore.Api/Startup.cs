@@ -98,6 +98,10 @@ namespace JWT
             app.UseAuthentication();
             app.UseCors("CorsPolicy");
 
+
+            app.UseMiddleware(typeof(ErrorHandler));
+
+
             //app.UseHttpsRedirection();
             app.UseMvc();
 

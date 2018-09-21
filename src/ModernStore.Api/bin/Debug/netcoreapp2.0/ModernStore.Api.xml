@@ -4,5 +4,26 @@
         <name>ModernStore.Api</name>
     </assembly>
     <members>
+        <member name="M:ModernStore.Api.Middleware.ErrorHandler.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:ModernStore.Api.Middleware.ErrorHandler.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernStore.Api.Middleware.ErrorHandler.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
