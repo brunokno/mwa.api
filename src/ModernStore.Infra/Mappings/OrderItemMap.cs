@@ -17,11 +17,13 @@ namespace ModernStore.Infra.Mappings
 
         public void Configure(EntityTypeBuilder<OrderItem> builder)
         {
-            //builder.ToTable("OrderItem");
+            builder.ToTable("OrderItem");
             builder.HasKey(x => x.Id);//.HasName("Id");
             builder.Property(x => x.Price);//.HasColumnType("money");
             builder.Property(x => x.Quantity);
             builder.HasOne(x => x.Product);
+
+            builder.Ignore(x => x.Notifications);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace ModernStore.Infra.Mappings
 
         public void Configure(EntityTypeBuilder<Order> builder)
         {
-            //builder.ToTable("Order");
+            builder.ToTable("Order");
             builder.HasKey(x => x.Id);//.HasName("Id");
             builder.Property(x => x.CreateDate);
             builder.Property(x => x.DeliveryFee);// .HasColumnType("money");
@@ -37,6 +37,7 @@ namespace ModernStore.Infra.Mappings
             builder.HasMany(x => x.Items);
             builder.HasOne(x => x.Customer);
 
+            builder.Ignore(x => x.Notifications);
         }
     }
 }

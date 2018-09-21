@@ -13,13 +13,14 @@ namespace ModernStore.Infra.Mappings
 
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            //builder.ToTable("Product");
+            builder.ToTable("Product");
             builder.HasKey(x => x.Id); //.HasName("Id");
             builder.Property(x => x.Image).IsRequired().HasMaxLength(1024);
             builder.Property(x => x.Price);
             builder.Property(x => x.QuantityOnHand);
             builder.Property(x => x.Title).IsRequired().HasMaxLength(80);
 
+            builder.Ignore(x => x.Notifications);
         }
     }
 }
