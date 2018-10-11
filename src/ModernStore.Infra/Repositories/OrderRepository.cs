@@ -1,24 +1,21 @@
 ﻿using ModernStore.Domain.Entities;
 using ModernStore.Domain.Repositories;
 using ModernStore.Infra.Contexts;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ModernStore.Infra.Repositories
 {
-    public class OrderRepository : IOrderRepository
+    public class OrderRepository : Repository<Order>, IOrderRepository
     {
         private readonly ModernStoreDataContext _context;
 
         public OrderRepository(ModernStoreDataContext context)
+            :base(context)
         {
-            _context = context;
         }
 
         public void Save(Order order)
         {
-            _context.Orders.Add(order);
+            DbSet.Add(order);
         }
     }
 }

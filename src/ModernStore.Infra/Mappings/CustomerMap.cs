@@ -32,7 +32,7 @@ namespace ModernStore.Infra.Mappings
             builder.OwnsOne(x => x.Name)
                 .Property(p => p.LastName).HasColumnName("LastName").IsRequired().HasMaxLength(60);
 
-            builder.Ignore(x => x.Notifications);
+            //builder.Ignore(x => x.Notifications);
 
             builder.HasOne(x => x.User);
 

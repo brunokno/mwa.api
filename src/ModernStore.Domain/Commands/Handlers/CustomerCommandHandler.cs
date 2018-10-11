@@ -1,63 +1,158 @@
-﻿using FluentValidator;
+﻿using MediatR;
 using ModernStore.Domain.Commands.Inputs;
-using ModernStore.Domain.Commands.Results;
+using ModernStore.Domain.Core.Bus;
+using ModernStore.Domain.Core.Notifications;
 using ModernStore.Domain.Entities;
-using ModernStore.Domain.Repositories;
-using ModernStore.Domain.Resources;
-using ModernStore.Domain.Services;
+using ModernStore.Domain.Events;
+using ModernStore.Domain.Interfaces;
 using ModernStore.Domain.ValueObjects;
-using ModernStore.Shared.Commands;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ModernStore.Domain.Commands.Handlers
 {
-    public class CustomerCommandHandler : Notifiable,
-        ICommandHandler<RegisterCustomerCommand>
+    public class CustomerCommandHandler : CommandHandler,
+        IRequestHandler<RegisterCustomerCommand>,
+        IRequestHandler<UpdateCustomerCommand>,
+        IRequestHandler<RemoveCustomerCommand>
     {
         private readonly ICustomerRepository _customerRepository;
-        private readonly IEmailService _emailService;
+        private readonly IMediatorHandler Bus;
 
-        public CustomerCommandHandler(ICustomerRepository customerRepository,
-            IEmailService emailService)
+        public CustomerCommandHandler(
+            ICustomerRepository customerRepository,
+            IUnitOfWork uow,
+            IMediatorHandler bus,
+            INotificationHandler<DomainNotification> notifications) : base(uow, bus, notifications)
         {
             _customerRepository = customerRepository;
-            _emailService = emailService;
+            Bus = bus;
         }
 
-        public ICommandResult Handle(RegisterCustomerCommand command)
+        public Task Handle(RegisterCustomerCommand message, CancellationToken cancellationToken)
         {
-            if (_customerRepository.DocumentExists(command.Document))
+            if(!message.IsValid())
             {
-                AddNotification("Document", "CPF já cadastrado");
-                return null;
+                NotifyValidationErrors(message);
+                return Task.CompletedTask;
             }
 
-            var name = new Name(command.FirstName, command.LastName);
-            var email = new Email(command.Email);
-            var document = new Document(command.Document);
-            var user = new User(command.Username, command.Password, command.ConfirmPassword);
-            var customer = new Customer(name, email, document, user);
+            if (_customerRepository.DocumentExists(message.Document))
+            {
+                Bus.RaiseEvent(new DomainNotification(message.MessageType, "CPF já cadastrado"));
+                return Task.CompletedTask;
+            }
 
-            AddNotifications(name.Notifications);
-            AddNotifications(email.Notifications);
-            AddNotifications(document.Notifications);
-            AddNotifications(user.Notifications);
-            AddNotifications(customer.Notifications);
+            var name = new Name(message.FirstName, message.LastName);
+            var email = new Email(message.Email);
+            var document = new Document(message.Document);
+            var user = new User(message.Username, message.Password, message.ConfirmPassword);
+            var customer = new Customer(
+                name, 
+                email, 
+                document, 
+                user,
+                message.BirthDate, 
+                Guid.NewGuid(),
+                message.InscricaoEstadual,
+                message.CompanyName,
+                message.Phone,
+                message.CellPhone,
+                message.Endereco,
+                message.Numero,
+                message.Complemento,
+                message.Cidade,
+                message.Bairro,
+                message.Estado
+            );
 
-            if (!Valid)
-                return null;
+            _customerRepository.Add(customer);
 
-            _customerRepository.Save(customer);
+            //_emailService.Send(
+            //    customer.Name.ToString(),
+            //    customer.Email.Address,
+            //    EmailTemplates.WelcomeEmailTitle,
+            //    EmailTemplates.WelcomeEmailBody);
+            
+            if (Commit())
+            {
+                Bus.RaiseEvent(new CustomerRegisteredEvent(customer.Id, customer.Name.FirstName, customer.Email.Address, customer.BirthDate));
+            }
 
-            _emailService.Send(
-                customer.Name.ToString(),
-                customer.Email.Address,
-                EmailTemplates.WelcomeEmailTitle,
-                EmailTemplates.WelcomeEmailBody);
-
-            return new RegisterCustomerCommandResult(customer.Id, customer.Name.FirstName);
+            return Task.CompletedTask;
         }
+        
+        public Task Handle(UpdateCustomerCommand message, CancellationToken cancellationToken)
+        {
+            if (!message.IsValid())
+            {
+                NotifyValidationErrors(message);
+                return Task.CompletedTask;
+            }
+
+            var name = new Name(message.FirstName, message.LastName);
+            var email = new Email(message.Email);
+            var customer = new Customer(
+                name, 
+                email,
+                null, 
+                null, 
+                message.BirthDate,
+                message.InscricaoEstadual,
+                message.CompanyName,
+                message.Phone,
+                message.CellPhone,
+                message.Endereco,
+                message.Numero,
+                message.Complemento,
+                message.Cidade,
+                message.Bairro,
+                message.Estado);
+
+            var existingCustomer = _customerRepository.GetByEmail(customer.Email.Address);
+
+            if (existingCustomer != null && existingCustomer.Id != message.Id)
+            {
+                if (!existingCustomer.Equals(customer))
+                {
+                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "The customer e-mail has already been taken."));
+                    return Task.CompletedTask;
+                }
+            }
+
+            _customerRepository.Update(customer);
+
+            if (Commit())
+            {
+                Bus.RaiseEvent(new CustomerRegisteredEvent(customer.Id, customer.Name.FirstName, customer.Email.Address, customer.BirthDate));
+            }
+
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(RemoveCustomerCommand message, CancellationToken cancellationToken)
+        {
+            if (!message.IsValid())
+            {
+                NotifyValidationErrors(message);
+                return Task.CompletedTask;
+            }
+
+            _customerRepository.Remove(message.Id);
+
+            if (Commit())
+            {
+                Bus.RaiseEvent(new CustomerRemovedEvent(message.Id));
+            }
+
+            return Task.CompletedTask;
+        }
+
+        public void Dispose()
+        {
+            _customerRepository.Dispose();
+        }
+
     }
 }

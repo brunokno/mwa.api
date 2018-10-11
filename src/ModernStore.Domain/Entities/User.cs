@@ -1,5 +1,6 @@
 ﻿using FluentValidator.Validation;
 using ModernStore.Shared.Entities;
+using System;
 using System.Text;
 
 namespace ModernStore.Domain.Entities
@@ -13,10 +14,11 @@ namespace ModernStore.Domain.Entities
             Username = username;
             Password =  EncryptPassword(password);
             Active = true;
+            Id = Guid.NewGuid();
 
-            AddNotifications(new ValidationContract()
-                .AreEquals(Password, EncryptPassword(confirmPassword), "Password", "As senhas não coincidem")
-                );
+            //AddNotifications(new ValidationContract()
+            //    .AreEquals(Password, EncryptPassword(confirmPassword), "Password", "As senhas não coincidem")
+            //    );
         }
 
         public string Username { get; private set; }
@@ -28,7 +30,7 @@ namespace ModernStore.Domain.Entities
             if (Username == username && Password == EncryptPassword(password))
                 return true;
 
-            AddNotification("Password", "Usuário ou senha inválidos");
+            //AddNotification("Password", "Usuário ou senha inválidos");
             return false;
         }
 

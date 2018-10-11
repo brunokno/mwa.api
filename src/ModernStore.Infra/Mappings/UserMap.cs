@@ -27,7 +27,7 @@ namespace ModernStore.Infra.Mappings
             builder.Property(x => x.Password).IsRequired().HasMaxLength(32);//.IsFixedLength();
             builder.Property(x => x.Active);
 
-            builder.Ignore(x => x.Notifications);
+            //builder.Ignore(x => x.Notifications);
         }
     }
 }

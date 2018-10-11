@@ -9,8 +9,9 @@ namespace ModernStore.Infra.Contexts
     public class ModernStoreDataContext:DbContext
     {
         //https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/
-        //add-migration initial
-        //update database
+        //add-Migration  -context EventStoreSQLContext
+        //update-database -context EventStoreSQLContext
+
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }

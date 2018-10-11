@@ -6,37 +6,43 @@ using System;
 //using System.Data.Entity;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using ModernStore.Domain.Interfaces;
 
 namespace ModernStore.Infra.Repositories
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomerRepository : Repository<Customer>, ICustomerRepository
     {
         private readonly ModernStoreDataContext _context;
 
         public CustomerRepository(ModernStoreDataContext context)
+            : base(context)
         {
-            _context = context;
         }
 
         public bool DocumentExists(string document)
         {
-            return _context
-                        .Customers
+            return DbSet
                         .Any(x => x.Document.Number == document);
         }
 
         public Customer Get(Guid id)
         {
-            return _context
-                        .Customers
+            return DbSet
                         .Include(x => x.User)
                         .FirstOrDefault(x => x.Id == id);
         }
 
+        Customer ICustomerRepository.Get(string username)
+        {
+            return DbSet
+            .Include(x => x.User)
+            .AsNoTracking()
+            .FirstOrDefault(x => x.User.Username == username);
+        }
+
         public GetCustomerCommandResult Get(string username)
         {
-            return _context
-                        .Customers
+            return DbSet
                         .Include(x => x.User)
                         .AsNoTracking()
                         .Select(x => new GetCustomerCommandResult
@@ -54,19 +60,25 @@ namespace ModernStore.Infra.Repositories
 
         public Customer GetByUsername(string username)
         {
-            return _context
-                    .Customers
+            return DbSet
                     .FirstOrDefault(x => x.User.Username == username);
+        }
+
+        public Customer GetByEmail(string email)
+        {
+            return DbSet
+                    .FirstOrDefault(x => x.Email.Address == email);
         }
 
         public void Save(Customer customer)
         {
-            _context.Customers.Add(customer);
+            DbSet.Add(customer);
         }
 
         public void Update(Customer customer)
         {
-            _context.Entry(customer).State = EntityState.Modified;
+            Db.Entry(customer).State = EntityState.Modified;
         }
+
     }
 }

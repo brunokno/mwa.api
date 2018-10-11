@@ -1,4 +1,4 @@
-﻿using FluentValidator.Validation;
+﻿//using FluentValidator.Validation;
 using ModernStore.Shared.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,10 +16,10 @@ namespace ModernStore.Domain.Entities
             Quantity = quantity;
             Price = price;
 
-            AddNotifications(new ValidationContract()
-                .IsGreaterThan(Quantity, 1, "Quantity", $"Não temos tantos {Product.Title}(s) em estoque")
-                .IsGreaterThan(Quantity, Product.QuantityOnHand, "Quantity", $"Não temos tantos {Product.Title}(s) em estoque")
-                );
+            //AddNotifications(new ValidationContract()
+            //    .IsGreaterThan(Quantity, 1, "Quantity", $"Não temos tantos {Product.Title}(s) em estoque")
+            //    .IsGreaterThan(Quantity, Product.QuantityOnHand, "Quantity", $"Não temos tantos {Product.Title}(s) em estoque")
+            //    );
 
             Product.DecreaseQuantity(quantity);
         }

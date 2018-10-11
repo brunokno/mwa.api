@@ -25,10 +25,10 @@ namespace ModernStore.Domain.Entities
 
             _items = new List<OrderItem>();
 
-            AddNotifications(new ValidationContract()
-                .IsGreaterThan(DeliveryFee, 0, "DeliveryFee", "Taxa de entrega não pode ser negativo")
-                .IsGreaterThan(Discount, 0, "Discount", "Desconto não pode ser negativo")
-                );
+            //AddNotifications(new ValidationContract()
+            //    .IsGreaterThan(DeliveryFee, 0, "DeliveryFee", "Taxa de entrega não pode ser negativo")
+            //    .IsGreaterThan(Discount, 0, "Discount", "Desconto não pode ser negativo")
+            //    );
         }
 
         public Customer Customer { get; private set; }
@@ -44,8 +44,8 @@ namespace ModernStore.Domain.Entities
 
         public void AddItem(OrderItem item)
         {
-            AddNotifications(item.Notifications);
-            if (item.Valid)
+            //AddNotifications(item.Notifications);
+            //if (item.Valid)
                 _items.Add(item);
         }
     }

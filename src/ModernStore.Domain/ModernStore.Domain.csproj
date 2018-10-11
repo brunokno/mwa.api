@@ -1,34 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidator" Version="2.0.4" />
+    <PackageReference Include="FluentValidation" Version="7.5.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Inputs\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\ModernStore.Domain.Core\ModernStore.Domain.Core.csproj" />
     <ProjectReference Include="..\ModernStore.Shared\ModernStore.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Resources\EmailTemplates.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>EmailTemplates.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\EmailTemplates.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EmailTemplates.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

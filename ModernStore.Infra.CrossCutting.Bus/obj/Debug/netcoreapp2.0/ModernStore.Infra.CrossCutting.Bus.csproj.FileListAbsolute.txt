@@ -1,0 +1,12 @@
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.deps.json
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.AssemblyInfo.cs
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.csproj.CopyComplete
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.0\ModernStore.Infra.CrossCutting.Bus.pdb

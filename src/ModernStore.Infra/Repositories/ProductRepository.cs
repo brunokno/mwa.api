@@ -8,19 +8,19 @@ using System.Linq;
 
 namespace ModernStore.Infra.Repositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ModernStoreDataContext _context;
 
         public ProductRepository(ModernStoreDataContext context)
+            :base(context)
         {
-            _context = context;
+
         }
 
         public Product Get(Guid id)
         {
-            return _context
-                    .Products
+            return DbSet
                     //.AsNoTracking()
                     .FirstOrDefault(x => x.Id == id);
         }

@@ -20,7 +20,7 @@ namespace ModernStore.Infra.Mappings
             builder.Property(x => x.QuantityOnHand);
             builder.Property(x => x.Title).IsRequired().HasMaxLength(80);
 
-            builder.Ignore(x => x.Notifications);
+            //builder.Ignore(x => x.Notifications);
         }
     }
 }

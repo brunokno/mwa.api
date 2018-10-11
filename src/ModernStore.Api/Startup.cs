@@ -1,29 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
+using ModernStore.Api.Configurations;
 using ModernStore.Api.Filters;
 using ModernStore.Api.Middleware;
-using ModernStore.Domain.Commands.Handlers;
-using ModernStore.Domain.Repositories;
-using ModernStore.Domain.Services;
-using ModernStore.Infra.Contexts;
-using ModernStore.Infra.Repositories;
-using ModernStore.Infra.Services;
-using ModernStore.Infra.Transaction;
+//using ModernStore.Infra.Transaction;
 using ModernStore.IoC;
 using ModernStore.Shared;
 using Swashbuckle.AspNetCore.Swagger;
+using System.IO;
+using System.Text;
+
 
 namespace JWT
 {
@@ -65,8 +57,20 @@ namespace JWT
                 .Build());
             });
 
+            //Download from MVC Project
+            services.AddSingleton<IFileProvider>(
+                new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
+
             services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            //// In production, the Angular files will be served from this directory
+            //services.AddSpaStaticFiles(configuration =>
+            //{
+            //    configuration.RootPath = "ClientApp/dist";
+            //});
+
+            services.AddAutoMapperSetup();
 
             services.AddSwaggerGen(c =>
             {
@@ -74,7 +78,10 @@ namespace JWT
                 c.CustomSchemaIds(x => x.FullName);
                 c.DocumentFilter<AuthTokenOperation>();
             });
-            
+
+            // Adding MediatR for Domain Events and Notifications
+            services.AddMediatR();
+
             //.NET Native DI Abstraction
             RegisterServices(services);
         }
@@ -93,17 +100,36 @@ namespace JWT
                 //app.UseExceptionHandler();
             }
 
-
+            app.UseCors(c =>
+            {
+                c.AllowAnyHeader();
+                c.AllowAnyMethod();
+                c.AllowAnyOrigin();
+            });
 
             app.UseAuthentication();
-            app.UseCors("CorsPolicy");
 
+            //app.UseStaticFiles();
+            //app.UseSpaStaticFiles();
 
             app.UseMiddleware(typeof(ErrorHandler));
 
 
             //app.UseHttpsRedirection();
             app.UseMvc();
+
+            //app.UseSpa(spa =>
+            //{
+            //    // To learn more about options for serving an Angular SPA from ASP.NET Core,
+            //    // see https://go.microsoft.com/fwlink/?linkid=864501
+
+            //    spa.Options.SourcePath = "ClientApp";
+
+            //    if (env.IsDevelopment())
+            //    {
+            //        spa.UseAngularCliServer(npmScript: "start");
+            //    }
+            //});
 
             app.UseSwagger();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Modern Web Store"); });

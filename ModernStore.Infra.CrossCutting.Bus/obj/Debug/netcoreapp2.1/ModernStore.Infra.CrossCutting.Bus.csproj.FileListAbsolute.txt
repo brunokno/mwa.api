@@ -1,0 +1,6 @@
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\ModernStore.Infra.CrossCutting.Bus.deps.json
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\ModernStore.Infra.CrossCutting.Bus.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\ModernStore.Infra.CrossCutting.Bus.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\ModernStore.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\ModernStore.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\ModernStore.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\ModernStore.Infra.CrossCutting.Bus.AssemblyInfo.cs

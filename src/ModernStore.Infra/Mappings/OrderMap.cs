@@ -37,7 +37,7 @@ namespace ModernStore.Infra.Mappings
             builder.HasMany(x => x.Items);
             builder.HasOne(x => x.Customer);
 
-            builder.Ignore(x => x.Notifications);
+            //builder.Ignore(x => x.Notifications);
         }
     }
 }

@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using ModernStore.Application.Interfaces;
 using ModernStore.Domain.Commands.Handlers;
 using ModernStore.Domain.Commands.Inputs;
 using ModernStore.Domain.Commands.Results;
+using ModernStore.Domain.Interfaces;
 using ModernStore.Domain.Repositories;
 using ModernStore.Shared.Commands;
 using System;
@@ -18,17 +20,21 @@ namespace JWT.Controllers
     public class TokenController : Controller
     {
         private IConfiguration _config;
-        private readonly ICustomerRepository _customerRepository;
-        private readonly UserCommandHandler _handler;
+        //private readonly ICustomerRepository _customerRepository;
+        //private readonly UserCommandHandler _handler;
+        private readonly IUserAppService _userAppService;
 
         public TokenController(
-            IConfiguration config, 
-            ICustomerRepository customerRepository,
-            UserCommandHandler handler)
+            IConfiguration config,
+            //ICustomerRepository customerRepository,
+            //UserCommandHandler handler
+            IUserAppService userAppService
+            )
         {
             _config = config;
-            _customerRepository = customerRepository;
-            _handler = handler;
+            //_customerRepository = customerRepository;
+            //_handler = handler;
+            _userAppService = userAppService;
         }
         
         [HttpPost]
@@ -37,9 +43,20 @@ namespace JWT.Controllers
         public async Task<IActionResult> AuthenticateUser([FromForm]AuthenticateUserCommand login)
         {
             IActionResult response = Unauthorized();
-            var result = _handler.Handle(login);
+            //var result = _handler.Handle(login);
 
-            if(_handler.Notifications.Count>0)
+            //if(_handler.Notifications.Count>0)
+            //    return Unauthorized(
+            //    //new
+            //    //{
+            //    //    success = false,
+            //    //    errors = new[] { "Login/Senha não conferem." }
+            //    //}
+            //    );
+
+            var result = _userAppService.AuthenticatedUser(login.Username, login.Password);
+
+            if (result == null)
                 return Unauthorized(
                 //new
                 //{

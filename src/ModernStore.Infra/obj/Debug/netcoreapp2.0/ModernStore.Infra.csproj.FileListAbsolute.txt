@@ -19,8 +19,10 @@ C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcor
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.runtimeconfig.dev.json
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.dll
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Infra.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.dll
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Domain.dll
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Shared.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.pdb
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Domain.pdb
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\bin\Debug\netcoreapp2.0\ModernStore.Shared.pdb
 C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Infra\obj\Debug\netcoreapp2.0\ModernStore.Infra.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Application\bin\Debug\netcoreapp2.1\ModernStore.Application.deps.json
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Application\bin\Debug\netcoreapp2.1\ModernStore.Application.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Application\obj\Debug\netcoreapp2.1\ModernStore.Application.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Application\obj\Debug\netcoreapp2.1\ModernStore.Application.csproj.CoreCompileInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Application\obj\Debug\netcoreapp2.1\ModernStore.Application.AssemblyInfoInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Application\obj\Debug\netcoreapp2.1\ModernStore.Application.AssemblyInfo.cs

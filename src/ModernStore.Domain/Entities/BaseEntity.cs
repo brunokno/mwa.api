@@ -4,17 +4,44 @@ using System.Text;
 
 namespace ModernStore.Domain.Entities
 {
-    public class BaseEntity
+    public abstract class Entity
     {
-        public BaseEntity()
+        public Guid Id { get; protected set; }
+
+        public override bool Equals(object obj)
         {
-            //RegistrationDate = DateTime.Now;
+            var compareTo = obj as Entity;
+
+            if (ReferenceEquals(this, compareTo)) return true;
+            if (ReferenceEquals(null, compareTo)) return false;
+
+            return Id.Equals(compareTo.Id);
         }
 
-        //[Column(Order = 0)]
-        //public Guid Id { get; set; }
-        //public bool Active { get; set; }
-        //public DateTime RegistrationDate { get; set; }
-        //public DateTime? DateModified { get; set; }
+        public static bool operator ==(Entity a, Entity b)
+        {
+            if (ReferenceEquals(a, null) && ReferenceEquals(b, null))
+                return true;
+
+            if (ReferenceEquals(a, null) || ReferenceEquals(b, null))
+                return false;
+
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(Entity a, Entity b)
+        {
+            return !(a == b);
+        }
+
+        public override int GetHashCode()
+        {
+            return (GetType().GetHashCode() * 907) + Id.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return GetType().Name + " [Id=" + Id + "]";
+        }
     }
 }

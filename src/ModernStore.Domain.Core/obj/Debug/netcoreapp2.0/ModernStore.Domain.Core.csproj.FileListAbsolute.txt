@@ -1,0 +1,9 @@
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.deps.json
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\bin\Debug\netcoreapp2.0\ModernStore.Domain.Core.pdb
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\obj\Debug\netcoreapp2.0\ModernStore.Domain.Core.csprojAssemblyReference.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\obj\Debug\netcoreapp2.0\ModernStore.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\obj\Debug\netcoreapp2.0\ModernStore.Domain.Core.AssemblyInfoInputs.cache
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\obj\Debug\netcoreapp2.0\ModernStore.Domain.Core.AssemblyInfo.cs
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\obj\Debug\netcoreapp2.0\ModernStore.Domain.Core.dll
+C:\Tarefas\Others\balta.io\Estudo\mwa.api\src\ModernStore.Domain.Core\obj\Debug\netcoreapp2.0\ModernStore.Domain.Core.pdb

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  modernstore.api:
+    image: ${DOCKER_REGISTRY}modernstoreapi
+    build:
+      context: .
+      dockerfile: ModernStore.Api/Dockerfile

@@ -9,7 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModernStore.Domain\ModernStore.Domain.csproj" />
+    <ProjectReference Include="..\..\ModernStore.Infra.CrossCutting.Bus\ModernStore.Infra.CrossCutting.Bus.csproj" />
+    <ProjectReference Include="..\ModernStore.Application\ModernStore.Application.csproj" />
     <ProjectReference Include="..\ModernStore.Infra\ModernStore.Infra.csproj" />
     <ProjectReference Include="..\ModernStore.Shared\ModernStore.Shared.csproj" />
   </ItemGroup>
